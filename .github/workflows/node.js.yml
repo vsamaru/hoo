@@ -10,23 +10,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
 
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [10.x, 12.x, 14.x]
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
 
   my-job:
     name: My job
@@ -37,5 +21,5 @@ jobs:
         with:
           domain: 'o6.surge.sh'
           project: '.'
-          login: vsamaru@gmail.com
-          token: 89b7747249620a5492699aa660ae0f8e
+          login: 'vsamaru@gmail.com'
+          token: '89b7747249620a5492699aa660ae0f8e'
