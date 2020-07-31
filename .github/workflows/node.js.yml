@@ -21,5 +21,5 @@ jobs:
         with:
           domain: 'o6.surge.sh'
           project: '.'
-          login: 'vsamaru@gmail.com'
-          token: '89b7747249620a5492699aa660ae0f8e'
+          login: vsamaru@gmail.com
+          token: 89b7747249620a5492699aa660ae0f8e
