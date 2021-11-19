@@ -1,14 +1,22 @@
 +++
+title = "reveal-hugo"
+description = "A Hugo theme for creating Reveal.js presentations"
 outputs = ["Reveal"]
-title = "Famous Programming Quotes"
-
+[reveal_hugo]
+custom_theme = "reveal-hugo/themes/robot-lung.css"
+margin = 0.2
+highlight_theme = "color-brewer"
+transition = "slide"
+transition_speed = "fast"
+[reveal_hugo.templates.hotpink]
+class = "hotpink"
+background = "#FF4081"
 +++
-# Famous Programming Quotes
 
----
+# 📽️
 
-> "There are only two hard things in Computer Science: cache invalidation and naming things." -- Phil Karlton
+# reveal-hugo
 
----
+A Hugo theme for creating Reveal.js presentations.
 
-> “To me programming is more than an important practical art. It is also a gigantic undertaking in the foundations of knowledge.” -- Grace Hopper
+~ made by [@dzello](https://dzello.com/) ~
