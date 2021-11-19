@@ -1,9 +1,5 @@
-name: CI
-
-on:
-  push:
-    branches:
-    - master
+on: [push]
+name: Publish blog
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,5 +9,4 @@ jobs:
         submodules: true
     - uses: pulimento/github-action-hugo-deploy-to-firebase@master
       with:
-      env:
-        FIREBASE_TOKEN: 1//09RdMsmD1excECgYIARAAGAkSNwF-L9IrlEm9Ie3Hnp5fl1WqWj__8lKpn7z51AlVhVOHgXbYbYb6eCLhd0wsTCmjzaSi1RukAGw
+        firebase-token: 1//09RdMsmD1excECgYIARAAGAkSNwF-L9IrlEm9Ie3Hnp5fl1WqWj__8lKpn7z51AlVhVOHgXbYbYb6eCLhd0wsTCmjzaSi1RukAGw
