@@ -1,0 +1,13 @@
+on: [push]
+name: Publish blog
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        submodules: true
+    - uses: pulimento/github-action-hugo-deploy-to-firebase@master
+      with:
+      env:
+        FIREBASE_TOKEN: 1//09RdMsmD1excECgYIARAAGAkSNwF-L9IrlEm9Ie3Hnp5fl1WqWj__8lKpn7z51AlVhVOHgXbYbYb6eCLhd0wsTCmjzaSi1RukAGw
