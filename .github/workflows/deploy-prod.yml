@@ -6,7 +6,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
       with:
-        submodules: true
-    - uses: ryank90/action-hugo-firebase-deploy@master
-      with:
         firebase-token: 1//09RdMsmD1excECgYIARAAGAkSNwF-L9IrlEm9Ie3Hnp5fl1WqWj__8lKpn7z51AlVhVOHgXbYbYb6eCLhd0wsTCmjzaSi1RukAGw
