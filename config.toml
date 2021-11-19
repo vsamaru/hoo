@@ -1,9 +1,9 @@
-baseURL = "https://example.com/"
+baseURL = "/"
 languageCode = "en-us"
 title = "A Hugo theme for creating Reveal.js presentations"
 disableKinds = ["sitemap", "RSS"]
 theme = "."
-themesDir = "../"
+# themesDir = "../"
 
 # uncomment for browsing at file:///
 # relativeURLs = true
